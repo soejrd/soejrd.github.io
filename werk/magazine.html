@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sjoerd Klatser</title>
+    <link rel="stylesheet" href="../style/stylesheet.css">
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="icon" href="../imgs/icon.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_PKWC8CcRNyAg8kc27Eat3");
+        })();
+
+    </script>
+
+
+
+    <link rel="stylesheet" href="../contactButton/contactButton.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="../anime.min.js"></script>
+
+
+
+</head>
+
+<body onload="AOS.init()">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <a href="../index.html" id="escapeHatch">Sjoerd Klatser<span>.</span>
+                    <span>Den Haag - Haarlem</span>
+                </a>
+                <ul>
+                    <li><a href="werk.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Werk</a></li>
+                    <li><a href="../over/over.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Over</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <heading>
+        <h1>Magazine</h1>
+        <h2>Magazine dat bestaat uit verschillende opdrachten binnen grafisch ontwerp</h2>
+    </heading>
+    <main>
+        <figure id="graphicDesign"></figure>
+        <aside>
+            <h3>Opdrachtgever</h3>
+            <p>Minor Grafisch Ontwerp</p>
+            <h3>Casus</h3>
+            <p>Leer de fijne kneepjes van grafisch ontwerp in een project van 8 weken</p>
+            <h3>datum</h3>
+            <p>November 2017</p>
+            <h3>Type</h3>
+            <p>Minor</p>
+        </aside>
+        <article>
+            <h2>Case study</h2>
+            <p>De minor Graphic Design op de Haagse Hogeschool stond in teken van de basiskennis over grafisch ontwerp. Dit was het eerst project waar ik met print en InDesign heb gewerkt, en vond dit misschien wel net zo interessant als met web. Het magazine was het eindwerkstuk van de minor en bestaat uit de verschillende opdrachten, interviews, en oefeningen die ik alleen of in groepsverband heb uitgevoerd. 
+            </p>
+            <figure><img src="../imgs/typographicManual.jpg" alt="Foto van typographic Manual tijdschrift"></figure>
+            <figure><img src="../imgs/blender.jpg" alt="Foto van 3D papier render"></figure>
+            <figure><img src="../imgs/afriendofmine.jpg" alt="Foto van interview A Friend of Mine"></figure>
+            <figure><img src="../imgs/dynamic.jpg" alt="Foto van dynamische identiteit CMD"></figure>
+            <p id="last">Mocht je meer willen zien van dit magazine, neem dan even contact met mij op.
+            </p>
+        </article>
+    </main>
+
+
+
+
+
+
+
+
+
+    <div id="destroyer">
+        <div class="left">
+            <a href="tel:+31621638066">06 21638066</a>
+            <a href="mailto:sjoerdklatser@mail.com">sjoerdklatser@mail.com</a>
+        </div>
+        <div class="right">
+            <form action="#" autocomplete="off">
+                <input type="text" placeholder="uw naam" id="naam">
+                <input type="text" placeholder="uw emailadres" id="mailadres">
+                <textarea name="" id="bericht" cols="30" rows="10" placeholder="uw bericht"></textarea>
+                <div onclick="schluss(this), sendMail()" id="sendButton"><span id="sendButtonText">Verstuur</span></div>
+            </form>
+            <div id="schluss" onclick="schluss()"></div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../contactButton/contactButton.js"></script>
+    <script src="../core.js"></script>
+</body>
+
+</html>

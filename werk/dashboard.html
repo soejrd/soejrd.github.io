@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sjoerd Klatser</title>
+    <link rel="stylesheet" href="../style/stylesheet.css">
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="icon" href="../imgs/icon.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_PKWC8CcRNyAg8kc27Eat3");
+        })();
+
+    </script>
+
+
+
+    <link rel="stylesheet" href="../contactButton/contactButton.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="../anime.min.js"></script>
+
+
+
+</head>
+
+<body onload="AOS.init()">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <a href="../index.html" id="escapeHatch">Sjoerd Klatser<span>.</span>
+                    <span>Den Haag - Haarlem</span>
+                </a>
+                <ul>
+                    <li><a href="werk.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Werk</a></li>
+                    <li><a href="../over/over.html" onmouseover="fade(this)" class="navItems" onmouseout="fadeBack()">Over</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <heading>
+        <h1>SpaceX ITS Dashboard</h1>
+        <h2>Geïnspireerd naar de Star Wars Original Trilogy</h2>
+    </heading>
+    <main>
+        <a href="https://soejrd.github.io/IXT2_Challenge_1/" target="_blank">
+            <figure style="background-image: url(../imgs/spacexdashboard.jpg);background-size: contain;background-position: left"></figure>
+        </a>
+        <aside>
+            <h3>Opdrachtgever</h3>
+            <p>CMD HHS</p>
+            <h3>Casus</h3>
+            <p>Ontwerp een dashboard voor astronauten op weg naar Mars.</p>
+            <h3>datum</h3>
+            <p>Februari 2018</p>
+            <h3>Type</h3>
+            <p>Interactive User Interface
+                <br>Front-end Development
+            </p>
+        </aside>
+        <article>
+            <h2>User Interface</h2>
+            <p id="last">Voor een vak van CMD was het van belang dat we leerden werken met externe javascript libraries en het ontwerpen van een simpel dashboard. De casus van deze opdracht was om een interface te ontwerpen en te bouwen die aanspreekt bij astronauten, en terwijl ik een groot fan ben van het minimal clean design dat SpaceX toepast, heb ik het toch anders vormgegeven. Ik ben al sinds klein af aan een erg grote Star Wars fan, vooral van de originele trilogie. Daarom heb ik enkele interfaces van deze films bestudeerd om dit ontwerp op te baseren. <a href="http://www.blindltd.com/rogue-one">Blind</a>, de ontwerpers van user interfaces van veel grote films, hebben mij ook erg geïnspireerd deze visie in het werk toe te kunnen passen.
+                <br><br>
+            Het dashboard is compleet interactief en voornamelijk gebouwd in HTML. Voor de bewegingen binnen het dashboard heb ik gebruik gemaakt van <a href="https://threejs.org/">three.js</a> en <a href="https://d3js.org/">d3.js</a>. Het dashboard is te bezoeken <a href="https://soejrd.github.io/IXT2_Challenge_1/" target="_blank">via mijn GitHub</a>.
+            </p>
+            <a href="https://soejrd.github.io/IXT2_Challenge_1/" target="_blank"></a>
+        </article>
+    </main>
+
+
+
+
+
+
+
+
+
+    <div id="destroyer">
+        <div class="left">
+            <a href="tel:+31621638066">06 21638066</a>
+            <a href="mailto:sjoerdklatser@mail.com">sjoerdklatser@mail.com</a>
+        </div>
+        <div class="right">
+            <form action="#" autocomplete="off">
+                <input type="text" placeholder="uw naam" id="naam">
+                <input type="text" placeholder="uw emailadres" id="mailadres">
+                <textarea name="" id="bericht" cols="30" rows="10" placeholder="uw bericht"></textarea>
+                <div onclick="schluss(this), sendMail()" id="sendButton"><span id="sendButtonText">Verstuur</span></div>
+            </form>
+            <div id="schluss" onclick="schluss()"></div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../contactButton/contactButton.js"></script>
+    <script src="../core.js"></script>
+</body>
+
+</html>
